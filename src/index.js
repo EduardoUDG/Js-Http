@@ -1,5 +1,6 @@
 // import { init } from './js/chistes-page';
+import * as CRUD from './js/cruid-provider';
 
-import { init } from './js/usuarios-page';
 
-init();
+CRUD.getUser( 1 )
+  .then( console.log );
