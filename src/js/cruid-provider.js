@@ -8,6 +8,19 @@ const getUser = async( id ) => {
   return data; 
 }
 
+const createUser = async( usuario ) => {
+  const resp = await fetch(urlCRUD, {
+    method: 'POST',
+    body: JSON.stringify( usuario ),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  return await resp.json();
+}
+
+
 export {
-  getUser
+  getUser,
+  createUser
 }
