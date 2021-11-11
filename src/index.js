@@ -10,7 +10,10 @@ import * as CRUD from './js/cruid-provider';
 //   job: 'Student'
 // }).then( console.log );
 
-CRUD.updateUser( 1, {
-  name: 'Carlos',
-  job: 'Software Enginier'
-}).then( console.log );
+// CRUD.updateUser( 1, {
+//   name: 'Carlos',
+//   job: 'Software Enginier'
+// }).then( console.log );
+
+CRUD.deleteUser( 2 )
+  .then( console.log );
